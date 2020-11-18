@@ -1,0 +1,57 @@
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.pesquisa {
+    border-radius: 20px;
+    max-width: 180px
+}
+.icones{
+    font-size: 22px; 
+    width: 100px;
+    text-align: center;
+}
+.container{
+    background-color: #F0F2F5 !important
+}
+.icone-ativo{
+    border-bottom: 3px solid #1877F2;    
+}
+.icone-azul{
+    color: #1877F2;
+}
+.facebook{
+    font-size: 40px;
+    color: #1877F2;
+}
+.circulo_icones{
+    background: #D8DADF;
+    border-radius: 50%;
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-lateral-esqeurdo{
+    padding: 15px 0px 0px 20px;
+    max-width: 200px;
+    position: fixed;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.container-central{
+    max-width: 600px !important;
+    margin-top: 20px;
+}
+
+.story{
+    background: white;
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 5px;
+}
