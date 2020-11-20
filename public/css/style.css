@@ -1,4 +1,6 @@
-
+body {
+  padding-top: 3rem;
+}
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;
@@ -35,6 +37,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 .menu-lateral-esqeurdo{
     padding: 15px 0px 0px 20px;

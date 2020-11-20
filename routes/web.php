@@ -16,6 +16,10 @@ use App\Http\Controllers\InicioController;
 /*Route::get('/', function () {
     return view('welcome');
 });/*/
-
-Route::get('/', [InicioController::class, 'index']);
-
+Route::group(['middlewere'], function(){
+    Route::get('/t', [App\Http\Controllers\HomeController::class]);
+    Auth::routes();
+    Route::get('/t', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+});
+Route::get('/',[App\Http\Controllers\PublicacoesController::class, 'index'])->name('publicacoes');
+Route::post('/cadastrar_publicacao',[App\Http\Controllers\PublicacoesController::class, 'cadastrar_publicacao'])->name('cadastrar_publicacao');
