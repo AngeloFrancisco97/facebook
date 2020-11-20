@@ -170,7 +170,7 @@
                             <div class="w-100 d-flex align-items-center">
                                 <div class="circulo_icones" style=""></div>
                                 <div class="d-flex flex-column ml-2">
-                                    <div class="">{{ Auth::user()->name }}</div>
+                                    <div class="">{{ $publicacao->name }}</div>
                                     <div class="" style="font-size: 12px">5 h ·<i class="fas fa-user ml-1" style=""></i></div>
                                 </div>
                             </div>

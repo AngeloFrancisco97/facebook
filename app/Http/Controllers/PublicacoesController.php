@@ -8,7 +8,10 @@ use Redirect;
 class PublicacoesController extends Controller
 {
     public function index(){
-        $publicacoes = Publicacoes::get();
+        $publicacoes = Publicacoes::query()
+                ->join('users', 'users.id', '=', 'publicacoes.idUsuario')
+                ->orderBy('publicacoes.id', 'desc')
+                ->select('publicacoes.*', 'users.name')->get();
         return view ('inicio', ['publicacoes' => $publicacoes]);
     }
     public function cadastrar_publicacao(Request $request){
