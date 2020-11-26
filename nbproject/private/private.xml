@@ -5,6 +5,10 @@
         <group>
             <file>file:/C:/xampp/htdocs/facebook/resources/views/inicio.blade.php</file>
             <file>file:/C:/xampp/htdocs/facebook/public/css/style.css</file>
+            <file>file:/C:/xampp/htdocs/facebook/public/js/scripts.js</file>
+            <file>file:/C:/xampp/htdocs/facebook/resources/views/layouts/modals.blade.php</file>
+            <file>file:/C:/xampp/htdocs/facebook/app/Http/Controllers/PerfilController.php</file>
+            <file>file:/C:/xampp/htdocs/facebook/resources/views/perfil.blade.php</file>
         </group>
     </open-files>
 </project-private>

@@ -15,9 +15,7 @@ body {
     width: 100px;
     text-align: center;
 }
-.container{
-    background-color: #F0F2F5 !important
-}
+
 .icone-ativo{
     border-bottom: 3px solid #1877F2;    
 }
@@ -57,4 +55,67 @@ body {
     height: 200px;
     border-radius: 20px;
     margin: 5px;
+}
+
+.container-perfil{
+    max-width: 1050px !important;
+    margin-top: 11px;
+    min-height: 400px;
+    background-color: #F0F2F5;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius:  20px;
+}
+
+.circulo-perfil{
+    background: #D8DADF;
+    border-radius: 50%;
+    font-size: 16px;
+    height: 180px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 5px solid white;
+}
+
+.alinhar-circulo-perfil{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 240px;
+    position: relative;
+}
+
+.botao-capa{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    top: 150px;
+    position: relative;
+    right: 20px
+}
+
+.container-perfil-2{
+    max-width: 980px !important;
+    margin-top: 20px;
+}
+
+.modal-dialog {
+    max-width: 780px;
+    margin-top: 80px !important;
+}
+
+.top-0 {
+    top: 0px;
+}
+
+.custom-file-input ~ .custom-file-label::after {
+    content: "Selecionar";
+}
+
+.background-images{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }

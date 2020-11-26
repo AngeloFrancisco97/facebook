@@ -17,9 +17,12 @@ use App\Http\Controllers\InicioController;
     return view('welcome');
 });/*/
 Route::group(['middlewere'], function(){
-    Route::get('/t', [App\Http\Controllers\HomeController::class]);
+    Route::get('/', [App\Http\Controllers\HomeController::class]);
     Auth::routes();
-    Route::get('/t', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 });
+Auth::routes();
 Route::get('/',[App\Http\Controllers\PublicacoesController::class, 'index'])->name('publicacoes');
 Route::post('/cadastrar_publicacao',[App\Http\Controllers\PublicacoesController::class, 'cadastrar_publicacao'])->name('cadastrar_publicacao');
+Route::get('/perfil/',[App\Http\Controllers\PerfilController::class, 'index'])->name('perfil');
+Route::post('/adicionar_amigo',[App\Http\Controllers\PerfilController::class, 'adicionar_amigo'])->name('adicionar_amigo');
+Route::post('/editar_perfil',[App\Http\Controllers\PerfilController::class, 'editar_perfil'])->name('editar_perfil');

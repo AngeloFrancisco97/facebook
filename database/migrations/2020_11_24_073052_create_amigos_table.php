@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePublicacoesTable extends Migration
+class CreateAmigosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreatePublicacoesTable extends Migration
      */
     public function up()
     {
-        Schema::create('publicacoes', function (Blueprint $table) {
+        Schema::create('amigos', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('idUsuario');
-            $table->text('mensagem');
-            $table->string('foto');
+            $table->foreignId('idDeQuem');
+            $table->foreignId('idParaQuem');
+            $table->integer('aceitou')->default(0);
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreatePublicacoesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('publicacoes');
+        Schema::dropIfExists('amigos');
     }
 }
